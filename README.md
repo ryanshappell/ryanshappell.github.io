@@ -1,2 +1,2 @@
 # ryanshappell.github.io
-Professional website
+Personal website for Ryan Shappell and his art, projects, CV, etc.
