@@ -73,6 +73,7 @@ h2 {
 
 #social {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -142,6 +143,12 @@ h2 {
     }
 
     #social {
+        width: 100%;
         flex-direction: column;
+    }
+
+    #social > .row {
+        width: 100%;
+        justify-content: space-around;
     }
 }
