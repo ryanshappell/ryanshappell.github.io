@@ -17,7 +17,12 @@ var onResize = function() {
 }
 
 var clickCard = function(index) {
-    cards[index].style.width = "100%";
+    cards[index].classList.toggle("expanded");
+    for (var i = 0; i < cards.length; i++) {
+        if (i != index) {
+            cards[i].classList.toggle("hidden");
+        }
+    } 
 }
 
 document.getElementById("home").addEventListener("click", onClick.bind(this, "page-home"));
