@@ -1,4 +1,4 @@
-var onClick = function(id){
+var onClick = function(id) {
     document.querySelector(".nav-item.active").classList.toggle("active");
     document.getElementById(id.substring(5)).classList.toggle("active");
     var prevPage = document.querySelector(".page.active");
@@ -11,9 +11,13 @@ var onClick = function(id){
     page.style.opacity = "1";
 }
 
-var onResize = function(){
+var onResize = function() {
     var activePage = document.querySelector(".page.active");
     activePage.style.height = activePage.firstElementChild.clientHeight + "px";
+}
+
+var clickCard = function() {
+    
 }
 
 document.getElementById("home").addEventListener("click", onClick.bind(this, "page-home"));
@@ -21,6 +25,11 @@ document.getElementById("projects").addEventListener("click", onClick.bind(this,
 document.getElementById("art").addEventListener("click", onClick.bind(this, "page-art"));
 document.getElementById("cv").addEventListener("click", onClick.bind(this, "page-cv"));
 document.getElementById("contact").addEventListener("click", onClick.bind(this, "page-contact"));
+
+var cards = document.getElementsByClassName("card");
+for(var i = 0; i < cards.length; i++){
+    cards[i].addEventListener("click", clickCard.bind(i));
+}
 
 window.addEventListener("resize", onResize);
 

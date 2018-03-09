@@ -51,6 +51,39 @@ a:hover {
     padding: 10px;
 }
 
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.card:hover .card-header {
+    background-color: rgb(36, 116, 177);
+}
+
+.card-header {
+    background-color:rgb(40, 83, 116);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #FBF2DA;
+    transition: background-color 0.5s;
+}
+
+.card-image {
+    width: 100%;
+}
+
 #container-footer {
     display: flex;
     flex-direction: column;
