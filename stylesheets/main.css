@@ -16,6 +16,18 @@ h2 {
     text-align: center;
 }
 
+a {
+    transition: color 0.5s;
+}
+
+a:link, a:visited {
+    color: #2F906A;
+}
+
+a:hover {
+    color: #152b3C;
+}
+
 .page {
     overflow: hidden;
     height: 0;
@@ -32,6 +44,10 @@ h2 {
 }
 
 .page-content {
+    padding: 10px;
+}
+
+.page-content-item {
     padding: 10px;
 }
 
@@ -101,7 +117,7 @@ h2 {
 }
 
 #copyright::before {
-    border-top: 1px solid;
+    border-top: 2px solid;
     content: "";
     display: block;
     margin: 20px auto;
@@ -133,7 +149,7 @@ h2 {
     }
 
     .nav-item a {
-        padding: 0px 16px;
+        padding: 2px 16px;
     }
 
     #profile-picture {
