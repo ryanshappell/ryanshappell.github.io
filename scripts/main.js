@@ -16,8 +16,8 @@ var onResize = function() {
     activePage.style.height = activePage.firstElementChild.clientHeight + "px";
 }
 
-var clickCard = function() {
-    
+var clickCard = function(index) {
+    cards[index].style.width = "100%";
 }
 
 document.getElementById("home").addEventListener("click", onClick.bind(this, "page-home"));
@@ -28,7 +28,8 @@ document.getElementById("contact").addEventListener("click", onClick.bind(this, 
 
 var cards = document.getElementsByClassName("card");
 for(var i = 0; i < cards.length; i++){
-    cards[i].addEventListener("click", clickCard.bind(i));
+    cards[i].addEventListener("click", clickCard.bind(this, i));
+    cards[i].addEventListener("transitionend", onResize);
 }
 
 window.addEventListener("resize", onResize);

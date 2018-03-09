@@ -64,6 +64,7 @@ a:hover {
     width: 400px;
     height: 350px;
     overflow: hidden;
+    transition: width 0.5s;
 }
 
 .card:hover .card-header {
