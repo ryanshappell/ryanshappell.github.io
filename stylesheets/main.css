@@ -112,7 +112,7 @@ a:hover {
 
 #profile-picture {
     width: 200px;
-    height: 200px;
+    height: auto;
     margin: 20px;
 }
 
